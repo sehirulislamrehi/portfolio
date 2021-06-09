@@ -1,15 +1,35 @@
 
+import Switch from '@material-ui/core/Switch';
+import FormGroup from '@material-ui/core/FormGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import { useState } from 'react';
 
 const NavbarComponent = () => {
+
+     const [checked, setChecked] = useState(false);
+
+     const toggleChecked = (e) => {
+          setChecked((prev) => 
+               !prev );
+               if( e.target.checked == true ){
+                    document.getElementById("theme_css").href = ""
+               }
+               else{
+                    document.getElementById("theme_css").href = "http://localhost:3000/css/dark-theme.css"
+               }
+     };
+
      return(
           <nav className="navbar navbar-expand-lg dark fixed-top navbar-light">
                     
                <div className="container">
                     
-                    <a href="index.html" className="navbar-brand">
-                         Nour
-                         <span className="brand-bg"></span>
-                    </a>
+                    <FormGroup>
+                         <FormControlLabel
+                         control={<Switch checked={checked} onChange={toggleChecked} />}
+                         label="Light Theme"
+                         />
+                    </FormGroup>
                     
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navtoggler"
                          aria-controls="navtoggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,6 +45,15 @@ const NavbarComponent = () => {
                               </li>
                               <li className="nav-item">
                                    <a className="nav-link" href="#about">About</a>
+                              </li>
+                              <li className="nav-item">
+                                   <a className="nav-link" href="#skills">Skills</a>
+                              </li>
+                              <li className="nav-item">
+                                   <a className="nav-link" href="#expertise">Expertise</a>
+                              </li>
+                              <li className="nav-item">
+                                   <a className="nav-link" href="#counting">Counting</a>
                               </li>
                               <li className="nav-item">
                                    <a className="nav-link" href="#service">Service</a>

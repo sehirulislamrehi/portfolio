@@ -1,7 +1,9 @@
 
 const BannerComponent = () => {
      return(
-          <section id="home" className="home">
+          <section id="home" className="home" style={{
+               backgroundImage : "url(/images/rehi.jpg)"
+          }}>
                <div className="overlay"></div>
                <div className="container">
                     <div className="banner display-table">

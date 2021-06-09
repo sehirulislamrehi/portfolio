@@ -1,10 +1,10 @@
 
-import {BrowserRouter as Router,Switch,Route,Link,useHistory } from "react-router-dom";
+import {BrowserRouter as Router,Switch,Route } from "react-router-dom";
 import HomeComponent from "./Components/HomeComponent";
+
 
 function App() {
 
-  const history = useHistory()
 
     return (
 

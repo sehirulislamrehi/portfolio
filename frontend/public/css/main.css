@@ -613,7 +613,6 @@ Table Of Index
                           Start Section Header  
  ----------------------------------------------------------------*/
  .home {
-     background-image: url(https://nour-theme.netlify.app/assets/images/header/header.jpg);
      background-position: center center;
      background-repeat: no-repeat;
      background-attachment: fixed;
@@ -691,7 +690,7 @@ Table Of Index
      display: inline-block;
      padding-top: 10px;
      padding-bottom: 10px;
-     padding-right: 10px;  
+     padding-right: 25px;  
  }
  .banner-meta li {
      letter-spacing: 2px;
@@ -1021,6 +1020,7 @@ Table Of Index
      height: 100%;
      width: 0;
      background: #f3c26b;
+     width: 100%;
  }
  
  .skills .skill-box .progress-line > span > .percent-tooltip {
@@ -1296,6 +1296,7 @@ Table Of Index
  .portfolio {
      position: relative;
      background: #fff;
+     min-height: 100vh;
  }
  .filter-group {
      text-align: center;

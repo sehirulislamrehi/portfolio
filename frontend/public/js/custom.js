@@ -52,13 +52,13 @@ $(document).ready(function () {
      });
  
      /*========== Start Counter To Js Statistics   ==========*/
-     win.on('scroll.statistics', function () {
-         var stat = $('.statistics');
-         if ($(this).scrollTop() >= stat.offset().top - win.height() + 220) {
-             $('.count').countTo();
-             win.off('scroll.statistics');
-         }
-     });
+    //  win.on('scroll.statistics', function () {
+    //      var stat = $('.statistics');
+    //      if ($(this).scrollTop() >= stat.offset().top - win.height() + 220) {
+    //          $('.count').countTo();
+    //          win.off('scroll.statistics');
+    //      }
+    //  });
      
      
      /*========== Start Portfolio Trigger Filterizr Js ==========*/
@@ -84,58 +84,22 @@ $(document).ready(function () {
      
      
      /*========== Start OWL Carousel Js testimonial   ==========*/
-     $('.testimonial').owlCarousel({
-         loop: true,
-         items: 2,
-         margin: 50,
-         nav: true,
-         navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
-         responsive: {
-                0: {
-                     items: 1
-                },
-                600: {
-                     items: 1
-                },
-                700: {
-                     items: 1
-                },
-                1000: {
-                     items: 2
-                }
-           }
-     });
+    
      
       /*========== Start OWL Carousel Js sponsor   ==========*/
-     $('.sponsor').owlCarousel({
-         loop: true,
-         margin: 30,
-         smartSpeed: 1000,
-         autoplay: 2000,
-         responsive: {
-             0: {
-                 items: 2
-             },
-             768: {
-                 items: 3
-             },
-             1200: {
-                 items: 5
-             }
-         }
-     });
      
      
      
-     function animateProgressBar() {
-         $('.skill-box .progress-line > span').each(function () {
-             var percent = $(this).data('percent');
-             $(this).css({
-                 width: percent + '%',
-                 transition: 'width 1.5s linear'
-             });
-         });
-     }
+     
+    //  function animateProgressBar() {
+    //      $('.skill-box .progress-line > span').each(function () {
+    //          var percent = $(this).data('percent');
+    //          $(this).css({
+    //              width: percent + '%',
+    //              transition: 'width 1.5s linear'
+    //          });
+    //      });
+    //  }
  
      $(window).on('scroll', function () {
          if ($(window).scrollTop() > $('.about').offset().top + 200) {
