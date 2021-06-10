@@ -98,18 +98,10 @@ const ExpertiseComponent = () => {
                                              </div>
                                         </div>
 
-
-
-
-
                                    </div>
 
 
                               </div>
-
-
-
-
 
 
                          </div>

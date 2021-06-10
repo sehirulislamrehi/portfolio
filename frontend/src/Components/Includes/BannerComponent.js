@@ -16,7 +16,6 @@ const BannerComponent = () => {
                                    <span>I'm </span>
                                    Sehirul Islam Rehi
                                    <br />
-                                   <span>Based In Bangladesh</span>
                               </h1>
 
                               <ul className="banner-meta">

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const BlogComponent = () => {
      return(
@@ -46,7 +47,9 @@ const BlogComponent = () => {
                                                   Incididunt Ut Labore Et Dolore Magna...</p>
                                         </div>
 
-                                        <a href="#" className="link">Read More</a>
+                                        <Link to="/blog">
+                                        View More
+                                        </Link>
                                    </div>
 
                               </div>
@@ -84,7 +87,7 @@ const BlogComponent = () => {
                                                   Incididunt Ut Labore Et Dolore Magna...</p>
                                         </div>
 
-                                        <a href="#" className="link">Read More</a>
+                                        <a href="#" className="link">View More</a>
                                    </div>
 
                               </div>
@@ -119,7 +122,7 @@ const BlogComponent = () => {
                                                   Incididunt Ut Labore Et Dolore Magna...</p>
                                         </div>
 
-                                        <a href="#" className="link">Read More</a>
+                                        <a href="#" className="link">View More</a>
                                    </div>
 
                               </div>
