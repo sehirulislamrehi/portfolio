@@ -71,13 +71,13 @@ $(document).ready(function () {
      });
  
      /*========== Start Magnigic Popup Js ==========*/
-     $('.my-work').magnificPopup({
-         delegate: 'a',
-         type: 'image',
-         gallery: {
-             enabled: true
-         }
-     });
+    //  $('.my-work').magnificPopup({
+    //      delegate: 'a',
+    //      type: 'image',
+    //      gallery: {
+    //          enabled: true
+    //      }
+    //  });
  
      
      
@@ -101,14 +101,14 @@ $(document).ready(function () {
     //      });
     //  }
  
-     $(window).on('scroll', function () {
-         if ($(window).scrollTop() > $('.about').offset().top + 200) {
-             animateProgressBar();
-         }
-     });
-     if ($(window).scrollTop() > $('.about').offset().top + 200) {
-         animateProgressBar();
-     }
+    //  $(window).on('scroll', function () {
+    //      if ($(window).scrollTop() > $('.about').offset().top + 200) {
+    //          animateProgressBar();
+    //      }
+    //  });
+    //  if ($(window).scrollTop() > $('.about').offset().top + 200) {
+    //      animateProgressBar();
+    //  }
      
      
      

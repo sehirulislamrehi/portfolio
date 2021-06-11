@@ -106,7 +106,7 @@ const ExpertiseComponent = () => {
 
                          </div>
 
-                         <a href="#" className="btn-one mt-20">Download Resume</a>
+                         <a href="https://cv.sehirulislamrehi.com/cv.pdf" target="_blank" className="btn-one mt-20">Download Resume</a>
                     </div>
 
                </section>
