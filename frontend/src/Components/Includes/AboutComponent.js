@@ -61,9 +61,9 @@ const AboutComponent = () => {
                                    <div className="follow-me">
                                         <p>Follow Me : </p>
                                         <ul className="social-media-about">
-                                             <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                                             <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                                             <li><a href="#"><i className="fab fa-linkedin"></i></a></li>
+                                             <li><a href="https://www.facebook.com/sehirul.rehi.3" target="_blank"><i className="fab fa-facebook-f"></i></a></li>
+                                             
+                                             <li><a href="https://www.linkedin.com/in/md-sehirul-islam-rehi-0ba022189/" target="_blank"><i className="fab fa-linkedin"></i></a></li>
                                         </ul>
 
                                    </div>

@@ -17,7 +17,7 @@ const ExpertiseComponent = () => {
                               <div className="col-md-6">
                                    <div className="my-resume">
                                         
-                                        <div className="history-top"> 2021 - Present</div>
+                                        <div className="history-top"> Jan, 2021 - Present</div>
                                         <div className="resume-item">
                                              <div className="resume-head">
                                                   <span className="icon-exp"><i className=" fa fa-briefcase"></i></span>
@@ -30,7 +30,7 @@ const ExpertiseComponent = () => {
                                         </div>
 
 
-                                        <div className="history-top"> 2020 - 2021</div>
+                                        <div className="history-top"> July, 2020 - Jan, 2021</div>
                                         <div className="resume-item">
                                              <div className="resume-head">
                                                   <span className="icon-exp"><i className=" fa fa-briefcase"></i></span>
@@ -42,17 +42,6 @@ const ExpertiseComponent = () => {
                                              </div>
                                         </div>
 
-                                        <div className="history-top"> 2019 - 2020</div>
-                                        <div className="resume-item">
-                                             <div className="resume-head">
-                                                  <span className="icon-exp"><i className=" fa fa-briefcase"></i></span>
-                                                  <div className="content-exper">
-                                                       <h4>Frontend Web Developer</h4>
-                                                       <div className="history">IQSA SOFT | Shyamoli, Dhaka</div>
-                                                       <div className="icon-bg"><i className="fa fa-briefcase"></i></div>
-                                                  </div>
-                                             </div>
-                                        </div>
 
                                    </div>
                               </div>
