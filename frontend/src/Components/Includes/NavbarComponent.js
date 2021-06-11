@@ -15,7 +15,7 @@ const NavbarComponent = () => {
                     document.getElementById("theme_css").href = ""
                }
                else{
-                    document.getElementById("theme_css").href = "http://localhost:3000/css/dark-theme.css"
+                    document.getElementById("theme_css").href = "/css/dark-theme.css"
                }
      };
 
@@ -60,9 +60,6 @@ const NavbarComponent = () => {
                               </li>
                               <li className="nav-item">
                                    <a className="nav-link" href="#portfolio">Portfolio</a>
-                              </li>
-                              <li className="nav-item">
-                                   <a className="nav-link" href="#blog">Blog</a>
                               </li>
                               <li className="nav-item">
                                    <a className="nav-link" href="#contact">Contact</a>

@@ -1,6 +1,5 @@
 import AboutComponent from "./Includes/AboutComponent"
 import BannerComponent from "./Includes/BannerComponent"
-import BlogComponent from "./Includes/BlogComponent"
 import ContactComponent from "./Includes/ContactComponent"
 import CountingComponent from "./Includes/CountingComponent"
 import ExpertiseComponent from "./Includes/ExpertiseComponent"
@@ -23,7 +22,6 @@ const HomeComponent = () => {
                <CountingComponent></CountingComponent>
                <ServiceComponent></ServiceComponent>
                <PortfolioComponent></PortfolioComponent>
-               <BlogComponent></BlogComponent>
                <ContactComponent></ContactComponent>
                <FooterComponent></FooterComponent>
           

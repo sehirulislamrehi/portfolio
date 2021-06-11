@@ -146,6 +146,9 @@
          bottom: 90px;
          right: 10px;
      }
+     .home {
+        background-position: bottom right;
+    }
      }
      
      

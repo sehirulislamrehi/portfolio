@@ -63,7 +63,7 @@ const PortfolioComponent = () => {
                                    <div className="image">
                                         <img className="img-fliud" src="/images/portfolio/order.png" alt="my-work"></img>
                                    </div>
-                                   <a className="overlay" href="https://order.sehirulislamrehi.com/" target="_blank">
+                                   <a className="overlay" href="https://order.sehirulislamrehi.com/login" target="_blank">
                                         <span className="icon-img"><i className="fas fa-image"></i></span>
                                         <div className="info-img">
                                              <span>Order Software</span>

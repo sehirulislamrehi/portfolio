@@ -22,7 +22,7 @@ const AboutComponent = () => {
                                    </div>
 
                                    <p className="mb-10">
-                                        Hi I'm Md. Sehirul Islam Rehi. I'm A Software Developer. I'm Studying BSc In Computer Science And Engineering. My Strength Is That I Am Discipline, Punctual And Honest. I Can Work Continuously Without Any Distraction. My Hobbies Are Playing Games. My Short-Term Goal Is To Get A Job Required Company Skills To Utilize And Improve My Knowledge. My Long-Term Goal Is To Be In A Respected Position In That Organization.
+                                        Hi I'm Md. Sehirul Islam Rehi. I'm A Software Developer. I'm Studying BSc In Computer Science And Engineering at Green University of Bangladesh. My Strength Is That I Am Discipline, Punctual And Honest. I Can Work Continuously Without Any Distraction. My Hobbies Are Playing Games. My Short-Term Goal Is To Get A Job Required Company Skills To Utilize And Improve My Knowledge. My Long-Term Goal Is To Be In A Respected Position In That Organization.
                                    </p>
 
 
