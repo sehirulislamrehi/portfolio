@@ -24,19 +24,44 @@ const PortfolioComponent = () => {
                          </div>
 
 
-
-
-
                     </div>
 
                     <div id="filtr-container" className="row">
+
+                         <div className="col-md-6 col-lg-4 filtr-item" data-category="1" data-sort="value">
+                              <div className="my-work">
+                                   <div className="image">
+                                        <img className="img-fliud" src="/images/portfolio/rezume.png" alt="my-work"></img>
+                                   </div>
+                                   <a className="overlay" href="https://rezume.beautyclinicbd.com/" target="_blank">
+                                        <span className="icon-img"><i className="fas fa-image"></i></span>
+                                        <div className="info-img">
+                                             <span>Rezume an ecommerce</span>
+                                        </div>
+                                   </a>
+                              </div>
+                         </div>
+
+                         <div className="col-md-6 col-lg-4 filtr-item" data-category="2" data-sort="value">
+                              <div className="my-work">
+                                   <div className="image">
+                                        <img className="img-fliud" src="/images/portfolio/study.png" alt="my-work"></img>
+                                   </div>
+                                   <a className="overlay" href="https://study.beautyclinicbd.com/" target="_blank">
+                                        <span className="icon-img"><i className="fas fa-image"></i></span>
+                                        <div className="info-img">
+                                             <span>Online Learning ( id : 38410090, password : 123456  )</span>
+                                        </div>
+                                   </a>
+                              </div>
+                         </div>
 
                          <div className="col-md-6 col-lg-4 filtr-item" data-category="3" data-sort="value">
                               <div className="my-work">
                                    <div className="image">
                                         <img className="img-fliud" src="/images/portfolio/sms.webp" alt="my-work"></img>
                                    </div>
-                                   <a className="overlay" href="https://sms.hostzam.com/" target="_blank">
+                                   <a className="overlay" href="http://178.128.23.23/" target="_blank">
                                         <span className="icon-img"><i className="fas fa-image"></i></span>
                                         <div className="info-img">
                                              <span>SMS Software</span>
