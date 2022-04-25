@@ -16,13 +16,25 @@ const ExpertiseComponent = () => {
 
                               <div className="col-md-6">
                                    <div className="my-resume">
-                                        
-                                        <div className="history-top"> Jan, 2021 - Present</div>
+
+                                        <div className="history-top"> Nov, 2021 - Present</div>
                                         <div className="resume-item">
                                              <div className="resume-head">
                                                   <span className="icon-exp"><i className=" fa fa-briefcase"></i></span>
                                                   <div className="content-exper">
-                                                       <h4>Jr. Software Developer</h4>
+                                                       <h4>Software Developer</h4>
+                                                       <div className="history">Emicon Technology | 19th floor, 48 Burj Gate Tower, Sheikh Zayed Road, Downtown Dubai, UAE.</div>
+                                                       <div className="icon-bg"><i className="fa fa-briefcase"></i></div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        
+                                        <div className="history-top"> Jan, 2021 - Nov, 2021</div>
+                                        <div className="resume-item">
+                                             <div className="resume-head">
+                                                  <span className="icon-exp"><i className=" fa fa-briefcase"></i></span>
+                                                  <div className="content-exper">
+                                                       <h4>Software Developer</h4>
                                                        <div className="history">Zaman IT | Uttara, Dhaka</div>
                                                        <div className="icon-bg"><i className="fa fa-briefcase"></i></div>
                                                   </div>

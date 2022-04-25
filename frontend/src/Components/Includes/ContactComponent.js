@@ -50,7 +50,6 @@ const ContactComponent = () => {
 
                                              <div className="info-cont">
                                                   <p style={{ textTransform: "lowercase" }}>mdsehirulislamrehi@gmail.com</p>
-                                                  <p style={{ textTransform: "lowercase" }}>rehi.zamanit@gmail.com</p>
                                              </div>
 
                                              <div className="bg-icon"><i className="fa fa-envelope"></i></div>

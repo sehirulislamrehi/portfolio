@@ -12,7 +12,7 @@ const FooterComponent = () => {
                                              <li><a href="https://www.linkedin.com/in/md-sehirul-islam-rehi-0ba022189/" target="_blank"><i className="fab fa-linkedin"></i></a></li>
                          </ul>
                          <div className="copyright text-center">
-                              &copy; 2021 Sehirul Islam Rehi All Rights Reserved By
+                              &copy; 2022 Sehirul Islam Rehi All Rights Reserved By
                          </div>
 
                     </div>

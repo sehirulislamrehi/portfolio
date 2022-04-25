@@ -33,7 +33,7 @@ const AboutComponent = () => {
                                              </div>
 
                                              <div className="col-md-6">
-                                                  <p>Age: <span>21</span></p>
+                                                  <p>Age: <span>22</span></p>
                                              </div>
 
                                              <div className="col-md-6">

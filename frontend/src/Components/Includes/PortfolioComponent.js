@@ -28,12 +28,91 @@ const PortfolioComponent = () => {
 
                     <div id="filtr-container" className="row">
 
+                         
+                         <div className="col-md-6 col-lg-4 filtr-item" data-category="1" data-sort="value">
+                              <div className="my-work">
+                                   <div className="image">
+                                        <img className="img-fliud" src="/images/portfolio/insta-daleel.png" alt="my-work"></img>
+                                   </div>
+                                   <a className="overlay" href="https://insta-daleel.emicon.tech" target="_blank">
+                                        <span className="icon-img"><i className="fas fa-image"></i></span>
+                                        <div className="info-img">
+                                             <span>
+                                                  Insta Daleel <br />
+                                                  Email : <span style={{ textTransform: "lowercase" }}>superadmin@gmail.com</span> <br />
+                                                  Password : 123456
+                                             </span>
+                                        </div>
+                                   </a>
+                              </div>
+                         </div>
+
+                         <div className="col-md-6 col-lg-4 filtr-item" data-category="1" data-sort="value">
+                              <div className="my-work">
+                                   <div className="image">
+                                        <img className="img-fliud" src="/images/portfolio/first-call.png" alt="my-work"></img>
+                                   </div>
+                                   <a className="overlay" href="https://first-call.emicon.tech" target="_blank">
+                                        <span className="icon-img"><i className="fas fa-image"></i></span>
+                                        <div className="info-img">
+                                             <span>
+                                                  First Call <br />
+                                                  Email : <span style={{ textTransform: "lowercase" }}>superadmin@gmail.com</span> <br />
+                                                  Password : 123456
+                                             </span>
+                                        </div>
+                                   </a>
+                              </div>
+                         </div>
+                         
+                         <div className="col-md-6 col-lg-4 filtr-item" data-category="1" data-sort="value">
+                              <div className="my-work">
+                                   <div className="image">
+                                        <img className="img-fliud" src="/images/portfolio/motorsouq.png" alt="my-work"></img>
+                                   </div>
+                                   <a className="overlay" href="https://motorsouq.emicon.tech/" target="_blank">
+                                        <span className="icon-img"><i className="fas fa-image"></i></span>
+                                        <div className="info-img">
+                                             <span>Motorsouq</span>
+                                        </div>
+                                   </a>
+                              </div>
+                         </div>
+
+                         <div className="col-md-6 col-lg-4 filtr-item" data-category="1" data-sort="value">
+                              <div className="my-work">
+                                   <div className="image">
+                                        <img className="img-fliud" src="/images/portfolio/beqlar.png" alt="my-work"></img>
+                                   </div>
+                                   <a className="overlay" href="https://beqlar.com.bd/" target="_blank">
+                                        <span className="icon-img"><i className="fas fa-image"></i></span>
+                                        <div className="info-img">
+                                             <span>Beqlar Ecommerce</span>
+                                        </div>
+                                   </a>
+                              </div>
+                         </div>
+
+                         <div className="col-md-6 col-lg-4 filtr-item" data-category="1" data-sort="value">
+                              <div className="my-work">
+                                   <div className="image">
+                                        <img className="img-fliud" src="/images/portfolio/bidorbuy.png" alt="my-work"></img>
+                                   </div>
+                                   <a className="overlay" href="https://bidorbuy.ae/" target="_blank">
+                                        <span className="icon-img"><i className="fas fa-image"></i></span>
+                                        <div className="info-img">
+                                             <span>BidorBuy</span>
+                                        </div>
+                                   </a>
+                              </div>
+                         </div>
+
                          <div className="col-md-6 col-lg-4 filtr-item" data-category="1" data-sort="value">
                               <div className="my-work">
                                    <div className="image">
                                         <img className="img-fliud" src="/images/portfolio/rezume.png" alt="my-work"></img>
                                    </div>
-                                   <a className="overlay" href="https://rezume.beautyclinicbd.com/" target="_blank">
+                                   <a className="overlay" href="https://rezumestore.com/" target="_blank">
                                         <span className="icon-img"><i className="fas fa-image"></i></span>
                                         <div className="info-img">
                                              <span>Rezume an ecommerce</span>
@@ -47,7 +126,7 @@ const PortfolioComponent = () => {
                                    <div className="image">
                                         <img className="img-fliud" src="/images/portfolio/study.png" alt="my-work"></img>
                                    </div>
-                                   <a className="overlay" href="https://study.beautyclinicbd.com/" target="_blank">
+                                   <a className="overlay" href="https://study.ronit.edu.bd/" target="_blank">
                                         <span className="icon-img"><i className="fas fa-image"></i></span>
                                         <div className="info-img">
                                              <span>Online Learning ( id : 38410090, password : 123456  )</span>
@@ -59,7 +138,7 @@ const PortfolioComponent = () => {
                          <div className="col-md-6 col-lg-4 filtr-item" data-category="3" data-sort="value">
                               <div className="my-work">
                                    <div className="image">
-                                        <img className="img-fliud" src="/images/portfolio/sms.webp" alt="my-work"></img>
+                                        <img className="img-fliud" src="/images/portfolio/sms.png" alt="my-work"></img>
                                    </div>
                                    <a className="overlay" href="http://178.128.23.23/" target="_blank">
                                         <span className="icon-img"><i className="fas fa-image"></i></span>
@@ -75,7 +154,7 @@ const PortfolioComponent = () => {
                                    <div className="image">
                                         <img className="img-fliud" src="/images/portfolio/as-associates.webp" alt="my-work"></img>
                                    </div>
-                                   <a className="overlay" href="https://as-associate.beautyclinicbd.com/" target="_blank">
+                                   <a className="overlay" href="https://as-associate.sehirulislamrehi.com/" target="_blank">
                                         <span className="icon-img"><i className="fas fa-image"></i></span>
                                         <div className="info-img">
                                              <span>A.S & Associates</span>
@@ -117,7 +196,7 @@ const PortfolioComponent = () => {
                                    <div className="image">
                                         <img className="img-fliud" src="/images/portfolio/order.png" alt="my-work"></img>
                                    </div>
-                                   <a className="overlay" href="https://order.sehirulislamrehi.com/login" target="_blank">
+                                   <a className="overlay" href="https://order.grameensoft.com/" target="_blank">
                                         <span className="icon-img"><i className="fas fa-image"></i></span>
                                         <div className="info-img">
                                              <span>Order Software</span>

@@ -99,7 +99,7 @@ const MySkillsComponent = () => {
                                    <div className="skills">
                                         <div className="skill-box">
                                              <h4 className="skill-title">
-                                                  Java
+                                                  Javascript
                                              </h4>
                                              <div className="progress-line">
                                                   <span data-percent="100"><span className="percent-tooltip"></span></span>
