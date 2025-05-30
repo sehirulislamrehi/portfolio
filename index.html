@@ -18,6 +18,8 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
 
+  <link rel="stylesheet" href="assets/css/font-awesome.css">
+
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
@@ -52,10 +54,28 @@
     .portfolio-item img {
       display: block;
       margin: 0 auto;
-      box-shadow: #b9b4b4 2px 3px 10px 2px;
     }
-    .portfolio.section.skills img{
-      box-shadow: none!important;
+
+    .portfolio.section.skills img {
+      box-shadow: none !important;
+    }
+
+    .resume-item img {
+      width: 25px;
+      margin: 0 5px;
+    }
+
+    .view-details-btn {
+      background: #0563bb;
+      color: white;
+      border: none;
+      font-size: 13px;
+      padding: 5px 15px;
+      border-radius: 5px;
+    }
+
+    .service-item:hover {
+      cursor: pointer;
     }
   </style>
   <!-- =======================================================
@@ -104,7 +124,7 @@
       <div class="container" data-aos="zoom-out">
         <div class="row justify-content-center">
           <div class="col-lg-9">
-            <h2>Md Sehirul Islam Rehi</h2>
+            <h2 style="font-size: 34px;">&lt;?php MD Sehirul Islam Rehi ?&gt;</h2>
             <p>
               Software
               <span class="typed" data-typed-items="Engineer">Engineer</span><span
@@ -125,39 +145,30 @@
     <section id="about" class="about section bg-light py-5">
       <div class="container" data-aos="fade-up">
         <!-- Section Title -->
-        <div class="section-title text-center mb-5">
-          <h2 class="fw-bold">About Me</h2>
+        <div class="section-title text-center">
+          <h2 class="fw-bold">{{ About Me }}</h2>
           <p class="lead text-muted">
-            Software Engineer | Laravel Specialist | Cloud
-            Enthusiast
+            Software Engineer | Laravel Specialist | Cloud Enthusiast
           </p>
         </div>
 
         <div class="row align-items-center">
           <!-- Profile Image -->
           <div class="col-lg-4 text-center mb-4 mb-lg-0">
-            <img src="assets/img/profile-img.jpg" class="img-fluid shadow" width="50%" alt="Profile Image" />
+            <img src="assets/img/profile-img.jpg" class="img-fluid" width="50%" alt="Profile Image" />
           </div>
 
           <!-- Bio Details -->
           <div class="col-lg-8">
-            <h3 class="fw-bold mb-3">Software Engineer (Backend)</h3>
             <p>
-              I am a dedicated and performance-driven backend developer with
-              over 3 years of professional experience in PHP (Laravel)
-              development. I thrive in agile environments and enjoy solving
-              complex problems with clean, maintainable code.
+              Backend developer with 3+ years of experience in PHP (Laravel), working in agile environments. Passionate
+              about exploring tools & technologies, I have hands-on experience with Git, Jenkins, RabbitMQ, Typesense,
+              and Distributed Systems across Windows & Linux platforms.
             </p>
             <p>
-              My expertise spans Laravel, MySQL, MSSQL, REST APIs, and modern
-              front-end frameworks like React.js and Vue.js. I am well-versed
-              in CI/CD pipelines, containerization, and tools such as Git,
-              Jenkins, RabbitMQ, and Typesense.
-            </p>
-            <p>
-              Passionate about cloud computing and distributed systems, I aim
-              to deliver secure, scalable, and efficient applications that
-              meet real-world needs.
+              I specialize in building scalable web applications using Laravel, MySQL, React.js/Vue.js, and other
+              technologies while following best software architecture practices. Enthusiastic about cloud platforms, I
+              continuously seek to enhance performance, security, and efficiency in software development.
             </p>
 
             <!-- Quick Info -->
@@ -195,8 +206,8 @@
 
             <div class="row">
               <div class="col-md-12">
-                <a href="https://drive.google.com/drive/folders/12yB-e2MGZoyOq0YpTUQVsb55ZAVnsO43?usp=sharing" target="_blank">
-                  <i class="fas fa-download"></i>
+                <a href="https://drive.google.com/drive/folders/12yB-e2MGZoyOq0YpTUQVsb55ZAVnsO43?usp=sharing"
+                  target="_blank">
                   📥 Download Resume
                 </a>
               </div>
@@ -215,7 +226,7 @@
       </div> -->
       <!-- End Section Title -->
 
-      <div class="container">
+      <div class="container mt-5">
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
@@ -334,8 +345,8 @@
     <section id="resume" class="resume section">
 
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="d-flex flex-row flex-wrap">
+          <!-- <div class="p-3" style="flex: 1; min-width: 300px;" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Education</h3>
 
             <div class="resume-item">
@@ -344,7 +355,6 @@
               <h5>2023</h5>
               <p><em>Green University of Bangladesh</em></p>
             </div>
-            <!-- Edn Resume Item -->
 
             <div class="resume-item">
               <img src="assets/img/education/milestone.png" style="width: 50px; height: 50px;" alt="">
@@ -352,7 +362,6 @@
               <h5>2018</h5>
               <p><em>Milestone College</em></p>
             </div>
-            <!-- Edn Resume Item -->
 
             <div class="resume-item">
               <img src="assets/img/education/tghs.jpg" style="width: 50px; height: 50px;" alt="">
@@ -360,11 +369,9 @@
               <h5>2016</h5>
               <p><em>Tejgaon Government High School</em></p>
             </div>
-            <!-- Edn Resume Item -->
-          </div>
+          </div> -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
+          <div class="p-3" style="flex: 1; min-width: 300px;" data-aos="fade-up" data-aos-delay="100">
 
             <div class="resume-item">
               <img src="assets/img/experience/pran-rfl.webp" style="width: 100px; height: 60px;" alt="">
@@ -395,6 +402,29 @@
                   command from laravel application.
                 </li>
               </ul>
+
+              <img src="assets/img/skills/php.png" data-bs-toggle="tooltip" title="PHP" class="img-fluid" alt="" />
+              <img src="assets/img/skills/laravel.png" data-bs-toggle="tooltip" title="Laravel" class="img-fluid"
+                alt="" />
+              <img src="assets/img/skills/next-js.svg" data-bs-toggle="tooltip" title="Next JS" class="img-fluid"
+                alt="" />
+              <img src="assets/img/skills/mysql.png" data-bs-toggle="tooltip" title="MYSQL Server" class="img-fluid"
+                alt="" />
+              <img src="assets/img/skills/mssql_server.png" data-bs-toggle="tooltip" title="MSSQL Server"
+                class="img-fluid" alt="" />
+              <img src="assets/img/skills/RabbitMQ.svg" data-bs-toggle="tooltip" title="RabbitMQ" class="img-fluid"
+                alt="" />
+              <img src="assets/img/skills/typesense.png" data-bs-toggle="tooltip" title="Typesense" class="img-fluid"
+                alt="" />
+              <img src="assets/img/skills/nginx.png" data-bs-toggle="tooltip" title="Nginx Server" class="img-fluid"
+                alt="" />
+              <img src="assets/img/skills/apache.png" data-bs-toggle="tooltip" title="Apache Server" class="img-fluid"
+                alt="" />
+              <img src="assets/img/skills/mongo-db.png" data-bs-toggle="tooltip" title="Mongo DB" class="img-fluid"
+                alt="" />
+              <img src="assets/img/skills/jenkins.svg" data-bs-toggle="tooltip" title="Jenkins" class="img-fluid"
+                alt="" />
+
             </div>
             <!-- Edn Resume Item -->
 
@@ -413,6 +443,15 @@
                   Where always timeslot-wise free service provider comes
                 </li>
               </ul>
+              <img src="assets/img/skills/php.png" data-bs-toggle="tooltip" title="PHP" class="img-fluid" alt="" />
+              <img src="assets/img/skills/laravel.png" data-bs-toggle="tooltip" title="Laravel" class="img-fluid"
+                alt="" />
+              <img src="assets/img/skills/mysql.png" data-bs-toggle="tooltip" title="MYSQL Server" class="img-fluid"
+                alt="" />
+              <img src="assets/img/skills/nginx.png" data-bs-toggle="tooltip" title="Nginx Server" class="img-fluid"
+                alt="" />
+              <img src="assets/img/skills/apache.png" data-bs-toggle="tooltip" title="Apache Server" class="img-fluid"
+                alt="" />
             </div>
             <!-- Edn Resume Item -->
 
@@ -434,6 +473,20 @@
                   was integrated.
                 </li>
               </ul>
+              <img src="assets/img/skills/html5.png" data-bs-toggle="tooltip" title="HTML5" class="img-fluid" alt="" />
+              <img src="assets/img/skills/css3.png" data-bs-toggle="tooltip" title="CSS3" class="img-fluid" alt="" />
+              <img src="assets/img/skills/bootstrap.png" data-bs-toggle="tooltip" title="Bootstrap" class="img-fluid"
+                alt="" />
+              <img src="assets/img/skills/javascript.png" data-bs-toggle="tooltip" title="JavaScript" class="img-fluid"
+                alt="" />
+              <img src="assets/img/skills/jquery.png" data-bs-toggle="tooltip" title="JQuery" class="img-fluid"
+                alt="" />
+              <img src="assets/img/skills/php.png" data-bs-toggle="tooltip" title="PHP" class="img-fluid" alt="" />
+              <img src="assets/img/skills/laravel.png" data-bs-toggle="tooltip" title="Laravel" class="img-fluid"
+                alt="" />
+              <img src="assets/img/skills/vue.png" data-bs-toggle="tooltip" title="Vue JS" class="img-fluid" alt="" />
+              <img src="assets/img/skills/react.png" data-bs-toggle="tooltip" title="React JS" class="img-fluid"
+                alt="" />
             </div>
             <!-- Edn Resume Item -->
           </div>
@@ -443,10 +496,10 @@
     <!-- /Resume Section -->
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <section id="portfolio" class="portfolio services section">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
+        <h2>{{ Portfolio }}</h2>
       </div>
       <!-- End Section Title -->
 
@@ -463,157 +516,199 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <!-- RFL CARE APP -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/portfolio-1.png" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>RFL Care App</h4>
-                <p>
-                  This app is for RFL group dealers, retailers, and plumbers.
-                  They will get points after the transaction and can get money
-                  and purchase gift products against points. The purpose of
-                  the project is to increase the company's sales. I was the
-                  team lead of the project.
-                </p>
-                <a href="assets/img/masonry-portfolio/portfolio-1.png" title="RFL Care App"
-                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://play.google.com/store/apps/details?id=com.rfl.rpl&pli=1" target="_blank"
-                  title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            <div class="col-lg-3 col-md-2 portfolio-item isotope-item filter-app" 
+              data-aos-delay="100">
+              <div class="service-item item-cyan position-relative">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                      d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
+                    </path>
+                  </svg>
+                  <img src="assets/img/portfolio/rflcare/main.png" width="50px" style="z-index: 2;" alt="">
+                </div>
+                <a class="stretched-link">
+                  <h3>RFL Care App</h3>
+                </a>
+                <button class="view-details-btn">
+                  View Details
+                </button>
               </div>
             </div>
             <!-- RFL CARE APP -->
 
             <!-- Paperless automation -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/portfolio-2.png" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Paperless Industrial Automation</h4>
-                <p>
-                  The main purpose of the project is to make the industrial
-                  work paperless. The main challenging part of the project is
-                  there are thousands of sheets and different working
-                  procedures. Sheets have different parameters like location,
-                  business unit, section, machine, building, level, line. The
-                  project is under development and it’s a mobile app. I’m
-                  playing the developer as well as team lead role.
-                </p>
-                <a href="assets/img/masonry-portfolio/portfolio-2.png" title="Paperless Industrial Automation"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            <div class="col-lg-3 col-md-2 portfolio-item isotope-item filter-web"
+              data-aos-delay="100">
+              <div class="service-item item-cyan position-relative">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                      d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
+                    </path>
+                  </svg>
+                  <img src="assets/img/portfolio/paperless/main.png" width="50px" style="z-index: 2;" alt="">
+                </div>
+                <a class="stretched-link">
+                  <h3>Paperless Automation</h3>
+                </a>
+                <button class="view-details-btn">
+                  View Details
+                </button>
               </div>
             </div>
             <!-- Paperless automation -->
 
             <!-- CRM -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-              <img src="assets/img/masonry-portfolio/portfolio-10.png" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>CRM</h4>
-                <p>
-                  CRM is a plaform where agents create service ticket of
-                  customers and agent can see their calling performance for
-                  PRAN_RFL Group call center.
-                </p>
-                <a href="assets/img/masonry-portfolio/portfolio-10.png" title="CRM" data-gallery="portfolio-gallery-app"
-                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" target="_blank" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
+            <div class="col-lg-3 col-md-2 portfolio-item isotope-item filter-web"
+              data-aos-delay="100">
+              <div class="service-item item-cyan position-relative">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                      d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
+                    </path>
+                  </svg>
+                  <img src="assets/img/portfolio/crm/main.png" width="50px" style="z-index: 2;" alt="">
+                </div>
+                <a class="stretched-link">
+                  <h3>CRM</h3>
+                </a>
+                <button class="view-details-btn">
+                  View Details
+                </button>
               </div>
             </div>
             <!-- CRM -->
 
             <!-- TastyTreat -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-              <img src="assets/img/masonry-portfolio/portfolio-13.png" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>TastyTreat</h4>
-                <p>
-                  Multi Store E-commerce
-                </p>
-                <a href="assets/img/masonry-portfolio/portfolio-13.png" title="TastyTreat"
-                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" target="_blank" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
+            <div class="col-lg-3 col-md-2 portfolio-item isotope-item filter-web"
+              data-aos-delay="100">
+              <div class="service-item item-cyan position-relative">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                      d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
+                    </path>
+                  </svg>
+                  <img src="assets/img/portfolio/tastytreat/main.png" width="50px" style="z-index: 2;" alt="">
+                </div>
+                <a class="stretched-link">
+                  <h3>TastyTreat</h3>
+                </a>
+                <button class="view-details-btn">
+                  View Details
+                </button>
               </div>
             </div>
             <!-- TastyTreat -->
 
             <!-- RFL eShop -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-              <img src="assets/img/masonry-portfolio/portfolio-11.png" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>RFL eShop</h4>
-                <p>
-                  Multi Store E-commerce
-                </p>
-                <a href="assets/img/masonry-portfolio/portfolio-11.png" title="RFL eShop"
-                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" target="_blank" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
+            <div class="col-lg-3 col-md-2 portfolio-item isotope-item filter-web"
+              data-aos-delay="100">
+              <div class="service-item item-cyan position-relative">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                      d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
+                    </path>
+                  </svg>
+                  <img src="assets/img/portfolio/rfleshop/main.png" width="50px" style="z-index: 2;" alt="">
+                </div>
+                <a class="stretched-link">
+                  <h3>RFL eShop</h3>
+                </a>
+                <button class="view-details-btn">
+                  View Details
+                </button>
               </div>
             </div>
             <!-- RFL eShop -->
 
             <!-- RFL Door -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-              <img src="assets/img/masonry-portfolio/portfolio-12.png" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>RFL Door</h4>
-                <p>
-                  Multi Store E-commerce
-                </p>
-                <a href="assets/img/masonry-portfolio/portfolio-12.png" title="RFL Door"
-                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#" target="_blank" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
+            <div class="col-lg-3 col-md-2 portfolio-item isotope-item filter-web"
+              data-aos-delay="100">
+              <div class="service-item item-cyan position-relative">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                      d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
+                    </path>
+                  </svg>
+                  <img src="assets/img/portfolio/rfldoor/main.png" width="50px" style="z-index: 2;" alt="">
+                </div>
+                <a class="stretched-link">
+                  <h3>RFL Door</h3>
+                </a>
+                <button class="view-details-btn">
+                  View Details
+                </button>
               </div>
             </div>
             <!-- RFL Door -->
 
             <!-- Rezume Store -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-              <img src="assets/img/masonry-portfolio/portfolio-5.png" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Rezume Store</h4>
-                <p>Single vendor ecommerce</p>
-                <a href="assets/img/masonry-portfolio/portfolio-5.png" title="Branding 2"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="https://www.rezumestore.com/" target="_blank" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
+            <div class="col-lg-3 col-md-2 portfolio-item isotope-item filter-web"
+              data-aos-delay="100">
+              <div class="service-item item-cyan position-relative">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                      d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
+                    </path>
+                  </svg>
+                  <img src="assets/img/portfolio/rezume/main.png" width="50px" style="z-index: 2;" alt="">
+                </div>
+                <a class="stretched-link">
+                  <h3>Rezume Store</h3>
+                </a>
+                <button class="view-details-btn">
+                  View Details
+                </button>
               </div>
             </div>
             <!-- Rezume Store -->
 
             <!-- Vision Ecommerce -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-              <img src="assets/img/masonry-portfolio/portfolio-3.png" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Vision</h4>
-                <p>Multi store ecommerce</p>
-                <a href="assets/img/masonry-portfolio/portfolio-3.png" title="Branding 2"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="https://vision.com.bd" target="_blank" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
+            <div class="col-lg-3 col-md-2 portfolio-item isotope-item filter-web"
+              data-aos-delay="100">
+              <div class="service-item item-cyan position-relative">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                      d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
+                    </path>
+                  </svg>
+                  <img src="assets/img/portfolio/vision/main.png" width="50px" style="z-index: 2;" alt="">
+                </div>
+                <a class="stretched-link">
+                  <h3>Vision</h3>
+                </a>
+                <button class="view-details-btn">
+                  View Details
+                </button>
               </div>
             </div>
             <!-- Vision Ecommerce -->
 
             <!-- Bugsbd company profile website -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-              <img src="assets/img/masonry-portfolio/portfolio-9.png" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>BugsBd</h4>
-                <p>
-                  BugsBD is not only the leading cyber security services
-                  provider but also the pioneer to make changes in the area of
-                  cyber security in Bangladesh.
-                </p>
-                <a href="assets/img/masonry-portfolio/portfolio-9.png" title="App 3"
-                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://bugsbd.com/" target="_blank" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
+            <div class="col-lg-3 col-md-2 portfolio-item isotope-item filter-web"
+              data-aos-delay="100">
+              <div class="service-item item-cyan position-relative">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                      d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
+                    </path>
+                  </svg>
+                  <img src="assets/img/portfolio/bugsbd/main.png" width="50px" style="z-index: 2;" alt="">
+                </div>
+                <a class="stretched-link">
+                  <h3>BugsBd</h3>
+                </a>
+                <button class="view-details-btn">
+                  View Details
+                </button>
               </div>
             </div>
             <!-- Bugsbd company profile website -->
@@ -629,7 +724,7 @@
     <section id="services" class="services section">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
+        <h2>{{ Services }}</h2>
       </div>
       <!-- End Section Title -->
 
